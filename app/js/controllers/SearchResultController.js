@@ -71,7 +71,7 @@ angular.module('juiceShop').controller('SearchResultController', [
       })
     }
 
-    $scope.searchQuery = $sce.trustAsHtml($location.search().q)
+    $scope.searchQuery = $location.search().q;
 
     productService.search($scope.searchQuery).then(function (products) {
       $scope.products = products
