@@ -102,4 +102,5 @@ angular.module('juiceShop').config(['$routeProvider', function ($routeProvider) 
   $routeProvider.otherwise({
     redirectTo: '/search'
   })
+
 }])

@@ -81,6 +81,10 @@ angular.module('juiceShop').config(['$locationProvider', function ($locationProv
   $locationProvider.hashPrefix('')
 }])
 
+angular.module('juiceShop').config(['$sceProvider', function ($sceProvider) {
+  $sceProvider.enabled(false);
+}])
+
 angular.module('juiceShop').filter('emailName', function () {
   return function (email) {
     // Returns only the name of a mail address
