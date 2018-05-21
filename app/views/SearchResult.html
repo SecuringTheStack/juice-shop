@@ -15,7 +15,7 @@
                 <th translate="LABEL_PRICE"></th>
                 <th></th>
             </tr>
-            <tr data-ng-repeat="product in products">
+            <tr data-ng-repeat="product in products | filter:searchQuery">
                 <td><img ng-src="/public/images/products/{{product.image}}" role="button" class="img-responsive img-thumbnail" style="width: 200px" ng-click="showDetail(product.id)"/></td>
                 <td>{{product.name}}</td>
                 <td><div ng-bind-html="product.description"></div></td>
